@@ -1,148 +1,196 @@
 {
-    "users":{
-        "user1":{
+    "users": {
+        "user1": {
             "id": "0",
             "icon": ""
         }
     },
+    "items": [
+        {
+            "id": "0000",
+            "type": "women",
+            "name": "women item 01",
+            "price": 100,
+            "image": "/src/assets/image/products/women/01.jpg"
+        },
+        {
+            "id": "0001",
+            "type": "women",
+            "name": "women item 02",
+            "price": 100,
+            "image": "/src/assets/image/products/women/02.jpg"
+        },
+        {
+            "id": "0002",
+            "type": "women",
+            "name": "women item 03",
+            "price": 100,
+            "image": "/src/assets/image/products/women/03.jpg"
+        },
+        {
+            "id": "0003",
+            "type": "women",
+            "name": "women item 04",
+            "price": 100,
+            "image": "/src/assets/image/products/women/04.jpg"
+        },
+        {
+            "id": "0004",
+            "type": "women",
+            "name": "women item 05",
+            "price": 100,
+            "image": "/src/assets/image/products/women/05.jpg"
+        },
+        {
+            "id": "0005",
+            "type": "women",
+            "name": "women item 06",
+            "price": 100,
+            "image": "/src/assets/image/products/women/06.jpg"
+        },
+        {
+            "id": "0006",
+            "type": "women",
+            "name": "women item 07",
+            "price": 100,
+            "image": "/src/assets/image/products/women/07.jpg"
+        },
+        {
+            "id": "0007",
+            "type": "women",
+            "name": "women item 08",
+            "price": 100,
+            "image": "/src/assets/image/products/women/08.jpg"
+        },
+        {
+            "id": "0008",
+            "type": "women",
+            "name": "women item 09",
+            "price": 100,
+            "image": "/src/assets/image/products/women/09.jpg"
+        },
+        {
+            "id": "0009",
+            "type": "women",
+            "name": "women item 10",
+            "price": 100,
+            "image": "/src/assets/image/products/women/10.jpg"
+        },
+        {
+            "id": "0010",
+            "type": "women",
+            "name": "women item 11",
+            "price": 100,
+            "image": "/src/assets/image/products/women/11.jpg"
+        },
+        {
+            "id": "0011",
+            "type": "women",
+            "name": "women item 12",
+            "price": 100,
+            "image": "/src/assets/image/products/women/12.jpg"
+        },
+
+        {
+            "id": "1000",
+            "type": "men",
+            "name": "men item 01",
+            "price": 100,
+            "image": "/src/assets/image/products/men/01.jpg"
+        },
+        {
+            "id": "1001",
+            "type": "men",
+            "name": "men item 02",
+            "price": 100,
+            "image": "/src/assets/image/products/men/02.jpg"
+        },
+        {
+            "id": "1002",
+            "type": "men",
+            "name": "men item 03",
+            "price": 100,
+            "image": "/src/assets/image/products/men/03.jpg"
+        },
+        {
+            "id": "1003",
+            "type": "men",
+            "name": "men item 04",
+            "price": 100,
+            "image": "/src/assets/image/products/men/04.jpg"
+        },
+        {
+            "id": "1004",
+            "type": "men",
+            "name": "men item 05",
+            "price": 100,
+            "image": "/src/assets/image/products/men/05.jpg"
+        },
+        {
+            "id": "1005",
+            "type": "men",
+            "name": "men item 06",
+            "price": 100,
+            "image": "/src/assets/image/products/men/06.jpg"
+        },
+        {
+            "id": "1006",
+            "type": "men",
+            "name": "men item 07",
+            "price": 100,
+            "image": "/src/assets/image/products/men/07.jpg"
+        },
+        {
+            "id": "1007",
+            "type": "men",
+            "name": "men item 08",
+            "price": 100,
+            "image": "/src/assets/image/products/men/08.jpg"
+        },
+        {
+            "id": "1008",
+            "type": "men",
+            "name": "men item 09",
+            "price": 100,
+            "image": "/src/assets/image/products/men/09.jpg"
+        },
+        {
+            "id": "1009",
+            "type": "men",
+            "name": "men item 10",
+            "price": 100,
+            "image": "/src/assets/image/products/men/10.jpg"
+        },
+        {
+            "id": "1010",
+            "type": "men",
+            "name": "men item 11",
+            "price": 100,
+            "image": "/src/assets/image/products/men/11.jpg"
+        },
+        {
+            "id": "1011",
+            "type": "men",
+            "name": "men item 12",
+            "price": 100,
+            "image": "/src/assets/image/products/men/12.jpg"
+        }
+
+    ],
     "pages": {
-        "homePage":{
-            "title":"首頁",
-            "page":"/"
-
+        "homePage": {
+            "title": "首頁",
+            "page": "/"
         },
-        "womenPage":{
-            "title":"女性專區",
-            "page":"/items?type=women",
-            "items":[
-                {
-                    "name": "women item 01",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/01.jpg"
-                },
-                {
-                    "name": "women item 02",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/02.jpg"
-                },
-                {
-                    "name": "women item 03",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/03.jpg"
-                },
-                {
-                    "name": "women item 04",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/04.jpg"
-                },
-                {
-                    "name": "women item 05",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/05.jpg"
-                },
-                {
-                    "name": "women item 06",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/06.jpg"
-                },
-                {
-                    "name": "women item 07",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/07.jpg"
-                },
-                {
-                    "name": "women item 08",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/08.jpg"
-                },
-                {
-                    "name": "women item 09",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/09.jpg"
-                },
-                {
-                    "name": "women item 10",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/10.jpg"
-                },
-                {
-                    "name": "women item 11",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/11.jpg"
-                },
-                {
-                    "name": "women item 12",
-                    "price": 100,
-                    "image": "/src/assets/image/products/women/12.jpg"
-                }
-            ]
+        "womenPage": {
+            "title": "女性專區",
+            "page": "/items?type=women",
+            "type": "women"
         },
-        "menPage":{
-            "title":"男性裝區",
-            "page":"/items?type=men",
-            "items":[
-                {
-                    "name": "men item 01",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/01.jpg"
-                },
-                {
-                    "name": "men item 02",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/02.jpg"
-                },
-                {
-                    "name": "men item 03",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/03.jpg"
-                },
-                {
-                    "name": "men item 04",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/04.jpg"
-                },
-                {
-                    "name": "men item 05",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/05.jpg"
-                },
-                {
-                    "name": "men item 06",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/06.jpg"
-                },
-                {
-                    "name": "men item 07",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/07.jpg"
-                },
-                {
-                    "name": "men item 08",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/08.jpg"
-                },
-                {
-                    "name": "men item 09",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/09.jpg"
-                },
-                {
-                    "name": "men item 10",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/10.jpg"
-                },
-                {
-                    "name": "men item 11",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/11.jpg"
-                },
-                {
-                    "name": "men item 12",
-                    "price": 100,
-                    "image": "/src/assets/image/products/men/12.jpg"
-                }
-            ]
-
+        "menPage": {
+            "title": "男性裝區",
+            "page": "/items?type=men",
+            "type": "men"
         }
     }
 }

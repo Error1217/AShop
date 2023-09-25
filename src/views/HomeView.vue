@@ -21,7 +21,7 @@ const pages = reactive(config.pages);
     </div>
   </header>
   <main>
-    <ItemArea :page="pages.womenPage"></ItemArea>
-    <ItemArea :page="pages.menPage"></ItemArea>
+    <ItemArea :title="pages.womenPage.title" :itemType="pages.womenPage.type"></ItemArea>
+    <ItemArea :title="pages.menPage.title" :itemType="pages.menPage.type"></ItemArea>
   </main>
 </template>

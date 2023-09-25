@@ -1,13 +1,25 @@
 <script setup>
-import { ref } from "vue";
+import { ref, reactive, computed } from "vue";
 import { RouterLink, RouterView } from 'vue-router'
-import ItemCard from "@/views/ItemCard.vue";
+import ItemCard from "@/components/ItemCard.vue";
+
+import config_json from "@/config.json"
 
 const props = defineProps({
-    page: {
-        type: Object,
-        default: () => ({})
+    title:{
+        type: String,
+        default: "專區"
+    },
+    itemType: {
+        type: String,
+        default: "None"
     }
+})
+
+const config = reactive(config_json);
+
+const items = computed(()=>{
+    return config.items.filter(item=>item.type===props.itemType);
 })
 
 let currentIndex = 0;
@@ -20,23 +32,21 @@ const moveTo = (index) => {
     carouselList.value = `transform: translateX(-${13 * index}rem)`;
 }
 
-
-
 const moveRight = () => {
-    if (0 <= currentIndex && currentIndex < props.page.items.length - 1) {
+    
+    if (0 <= currentIndex && currentIndex < items.value.length - 1) {
         moveTo(++currentIndex);
-
         isStart = false;
     }
 
-    if (currentIndex == props.page.items.length - 1) {
+    if (currentIndex == items.value.length - 1) {
         isEnd = true;
     }
 
 }
 
 const moveLeft = () => {
-    if (0 < currentIndex && currentIndex <= props.page.items.length - 1) {
+    if (0 < currentIndex && currentIndex <= items.value.length - 1) {
         moveTo(--currentIndex);
 
         isEnd = false;
@@ -52,12 +62,12 @@ const moveLeft = () => {
 <template>
     <div class=" relative flex border-pink-400 mx-8 h-96 rounded-3xl mb-20 justify-center border-4">
         <div class=" bg-pink-400 h-20 px-6 -mt-14 grid items-center rounded-lg text-2xl text-gray-100">
-            <div class="">{{ props.page.title }}</div>
+            <div class="">{{ props.title }}</div>
         </div>
 
         <div class=" absolute flex inset-0 h-80 my-8 mx-8 overflow-hidden">
             <div class=" flex duration-300 " :style="carouselList">
-                <div v-for="item in props.page.items" class="mx-2">
+                <div v-for="item in items" class="mx-2">
                     <ItemCard :item="item"></ItemCard>
                 </div>
             </div>
