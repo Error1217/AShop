@@ -13,7 +13,7 @@ const pages = reactive(config.pages);
 </script>
 
 <template>
-  <header>
+  <header class="">
     <NavBar logo="LOGO" :tabItems=pages></NavBar>
   </header>
 
