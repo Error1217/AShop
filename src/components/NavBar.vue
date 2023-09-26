@@ -30,7 +30,15 @@ const props = defineProps({
             </RouterLink>
         </nav>
 
-        <div class="group flex relative ml-auto items-center mr-10">
+        <div class=" flex mr-10 ml-auto items-center">
+            <div class=" w-20 h-8 rounded-full ring-2 text-gray-50 ring-pink-300 text-center grid items-center
+             hover:bg-pink-300 ">
+                購物車
+            </div>
+
+        </div>
+
+        <div class="group flex relative items-center mr-10">
             <img :src="UserImg" class=" h-12 w-12 rounded-full">
 
             <div class=" absolute bg-pink-100 text-pink-700 text-lg top-20 right-0 w-40 

@@ -16,17 +16,21 @@ const item = computed(() => {
 
 
 const isAdd = ref(false);
-const add = computed(()=>{
+const add = computed(() => {
     isAdd.value = true;
     return isAdd.value;
 })
-const showHint = computed(()=>{
+const showHint = computed(() => {
 
-    setTimeout(()=>{
-        isAdd.value = false;
-    }, 4000);
+    if (isAdd.value) {
 
-    return isAdd.value?`scale-100`:`scale-0`;
+        setTimeout(() => {
+            isAdd.value = false;
+        }, 4000);
+
+    }
+
+    return isAdd.value ? `scale-100` : `scale-0`;
 })
 
 </script>
@@ -54,7 +58,8 @@ const showHint = computed(()=>{
                 </div>
 
                 <div class="absolute text-lg bottom-2 right-0 ">
-                    <button @click="add" class=" text-gray-700 font-black px-5 py-2 rounded-xl ring-1 ring-pink-700 hover:bg-pink-200">
+                    <button @click="add"
+                        class=" text-gray-700 font-black px-5 py-2 rounded-xl ring-1 ring-pink-700 hover:bg-pink-200">
                         加入購物車
                     </button>
                 </div>
