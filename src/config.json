@@ -180,7 +180,8 @@
     "pages": {
         "homePage": {
             "title": "首頁",
-            "page": "/"
+            "page": "/",
+            "type": ""
         },
         "womenPage": {
             "title": "女性專區",
@@ -191,6 +192,11 @@
             "title": "男性裝區",
             "page": "/items?type=men",
             "type": "men"
+        },
+        "cartPage": {
+            "title": "購物車",
+            "page": "/cart",
+            "type": ""
         }
     }
 }

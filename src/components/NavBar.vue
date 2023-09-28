@@ -30,12 +30,17 @@ const props = defineProps({
             </RouterLink>
         </nav>
 
-        <div class=" flex mr-10 ml-auto items-center">
-            <div class=" w-20 h-8 rounded-full ring-2 text-gray-50 ring-pink-300 text-center grid items-center
+        <div class=" relative flex mr-10 ml-auto items-center">
+            <RouterLink :to="tabItems.cartPage.page">
+                <div class=" w-20 h-8 rounded-full ring-2 text-gray-50 ring-pink-300 text-center grid items-center
              hover:bg-pink-300 ">
-                購物車
-            </div>
+                    購物車
+                </div>
+            </RouterLink>
 
+            <div class=" absolute bg-pink-200 w-10 h-10 rounded-full grid items-center text-center -right-6 top-2 ring-1 ring-pink-900 ring-opacity-50 font-extrabold text-gray-700">
+                100
+            </div>
         </div>
 
         <div class="group flex relative items-center mr-10">
