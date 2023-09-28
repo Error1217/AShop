@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class=" bg-pink-400 h-36 absolute w-full">
+    <div class=" bg-pink-400 h-36 w-full">
         
     </div>
 </template>
